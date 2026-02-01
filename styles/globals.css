@@ -119,7 +119,10 @@ body {
     @apply btn bg-transparent text-text hover:bg-surface2;
   }
   .input {
-    @apply w-full rounded-xl border border-border bg-surface px-3 py-2 text-sm text-text placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent/40;
+    @apply w-full rounded-xl border border-border bg-surface px-3 py-2 text-sm text-text placeholder:text-muted focus:outline-none focus:ring-2;
+  }
+  .input:focus {
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 40%, transparent);
   }
   .chip {
     @apply inline-flex items-center rounded-full border border-border bg-surface2 px-2 py-1 text-xs font-medium text-text;
