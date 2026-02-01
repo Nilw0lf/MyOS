@@ -128,6 +128,7 @@ body {
     @apply inline-flex items-center rounded-full border border-border bg-surface2 px-2 py-1 text-xs font-medium text-text;
   }
   .pill {
-    @apply rounded-full bg-accent/15 px-2 py-1 text-xs font-semibold text-accent;
+    @apply rounded-full px-2 py-1 text-xs font-semibold text-accent;
+    background-color: color-mix(in srgb, var(--accent) 15%, transparent);
   }
 }
