@@ -88,7 +88,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     if (!note) return;
     const nextContent = updates.content ?? note.content;
     const nextTitle =
-      updates.title === \"\" ? titleFromContent(nextContent) : updates.title ?? note.title;
+      updates.title === "" ? titleFromContent(nextContent) : updates.title ?? note.title;
     const updated: Note = {
       ...note,
       ...updates,
